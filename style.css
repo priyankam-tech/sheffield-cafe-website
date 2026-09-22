@@ -1,0 +1,270 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f1e7;
+    color: #3e2723;
+}
+
+
+/* ==============================
+   Header
+   ============================== */
+
+header {
+    background-color: #5d4037;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   Sections
+   ============================== */
+
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+.hero {
+    background-color: #ead7c0;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   Buttons
+   ============================== */
+
+.button {
+    display: inline-block;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4e342e;
+}
+
+
+/* ==============================
+   Menu
+   ============================== */
+
+#menu {
+    background-color: #fffaf4;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card h3 {
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   Extra Menu
+   ============================== */
+
+#extraMenu {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+#extraMenu p {
+    background-color: #ead7c0;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   About
+   ============================== */
+
+#about {
+    background-color: #ead7c0;
+}
+
+
+/* ==============================
+   Contact
+   ============================== */
+
+#contact {
+    background-color: #fffaf4;
+}
+
+#contact a {
+    display: block;
+    margin-top: 20px;
+    color: #5d4037;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+    background-color: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+}
+/* Menu Images */
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+/* Contact Details */
+
+.contact-details {
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+.contact-details a {
+    display: inline;
+    margin-top: 0;
+}
+
+.map-link {
+    display: block;
+    margin-top: 20px;
+    color: #5d4037;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}
